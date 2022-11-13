@@ -1,8 +1,8 @@
-import React, { Component } from "react"; // (className based components)rce then will get props by this.props
+import React   from "react"; // (className based components)rce then will get props by this.props
 
-export class Newsitem extends Component {
-  render() {
-    let { title, description, imageurl, newsurl, author, date , source } = this.props;
+const  Newsitem = (props)  => {
+  
+    let { title, description, imageurl, newsurl, author, date , source } = props;
     return (
       <div className="my-3">
         <div className="card">
@@ -43,7 +43,7 @@ export class Newsitem extends Component {
         </div>
       </div>
     );
-  }
+  
 }
 
 export default Newsitem;
